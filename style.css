@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.PNR {
+    padding: 200px;
+}
+
+.result {
+    margin-left: 20px;
+    padding: 20px;
+    width: auto;
+    background-color: lightgrey;
+}
+#labelPnr {
+    margin-left: 20px;
+    float: left;
+}
+
+#usr {
+    margin-left: 10px;
+    width: 500px;
+    float: left;
+}
+.btn-success {
+    margin-left: 10px;
+}
+
+.about-us {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 1000px;
+    font-size: 21px;
+}
