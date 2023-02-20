@@ -59,7 +59,16 @@ document.querySelector('.btn-success').addEventListener('click', function () {
     let timeArrivedSecondOld = 0;
 
     for (let i = 0; i < noEmptyArr.length; i++) {
-        if (noEmptyArr.length == 15 && noEmptyArr[7].length == 4) {
+        if (noEmptyArr[0].length == 6 && noEmptyArr[6].length == 4) {
+            timeDepartureFirstOld = noEmptyArr[6].slice(0, 2);
+            timeDepartureSecondOld = noEmptyArr[6].slice(2, 4);
+            timeDeparture =
+                timeDepartureFirstOld + ':' + timeDepartureSecondOld;
+
+            timeArrivedFirstOld = noEmptyArr[7].slice(0, 2);
+            timeArrivedSecondOld = noEmptyArr[7].slice(2, 4);
+            timeArrived = timeArrivedFirstOld + ':' + timeArrivedSecondOld;
+        } else if (noEmptyArr.length == 25 && noEmptyArr[7].length == 4) {
             timeDepartureFirstOld = noEmptyArr[9].slice(0, 2);
             timeDepartureSecondOld = noEmptyArr[9].slice(2, 4);
             timeDeparture =
@@ -85,15 +94,6 @@ document.querySelector('.btn-success').addEventListener('click', function () {
 
             timeArrivedFirstOld = noEmptyArr[8].slice(0, 2);
             timeArrivedSecondOld = noEmptyArr[8].slice(2, 4);
-            timeArrived = timeArrivedFirstOld + ':' + timeArrivedSecondOld;
-        } else if (noEmptyArr[0].length == 6) {
-            timeDepartureFirstOld = noEmptyArr[6].slice(0, 2);
-            timeDepartureSecondOld = noEmptyArr[6].slice(2, 4);
-            timeDeparture =
-                timeDepartureFirstOld + ':' + timeDepartureSecondOld;
-
-            timeArrivedFirstOld = noEmptyArr[7].slice(0, 2);
-            timeArrivedSecondOld = noEmptyArr[7].slice(2, 4);
             timeArrived = timeArrivedFirstOld + ':' + timeArrivedSecondOld;
         }
     }
