@@ -16,9 +16,9 @@ document.querySelector('.btn-success').addEventListener('click', function () {
     const pnr_text = pnrText();
     // console.log(pnr_text, typeof pnr_text);
     const arrayPNR = pnr_text.split(/\n\s*/);
-    // console.log(arrayPNR);
+    console.log(arrayPNR);
     // const arrayPNR = array.split(' ');
-    // console.log(arrayPNR);
+    console.log(arrayPNR);
     console.log(`arrayPNR: ${arrayPNR}`);
     let noEmptyArr;
     for (let i = 0; i <= arrayPNR.length - 2; i++) {
@@ -26,7 +26,7 @@ document.querySelector('.btn-success').addEventListener('click', function () {
             let EmptyArr = arrayPNR[i].split(' ');
             // noEmptyArr1 = arr1.filter(str => str !== '');
             const noEmptyArr = EmptyArr.filter(str => str !== '');
-            console.log(noEmptyArr);
+            // console.log(noEmptyArr);
             const plane = noEmptyArr[0];
             let aviaCompany = '';
             let date = '';
@@ -67,37 +67,7 @@ document.querySelector('.btn-success').addEventListener('click', function () {
             let timeArrivedSecondOld = 0;
 
             for (let i = 0; i < noEmptyArr.length; i++) {
-                if (
-                    noEmptyArr.length == 15 &&
-                    noEmptyArr[9].length == 4 &&
-                    noEmptyArr[10].length == 4
-                ) {
-                    timeDepartureFirstOld = noEmptyArr[9].slice(0, 2);
-                    timeDepartureSecondOld = noEmptyArr[9].slice(2, 4);
-                    timeDeparture =
-                        timeDepartureFirstOld + ':' + timeDepartureSecondOld;
-
-                    timeArrivedFirstOld = noEmptyArr[10].slice(0, 2);
-                    timeArrivedSecondOld = noEmptyArr[10].slice(2, 4);
-                    timeArrived =
-                        timeArrivedFirstOld + ':' + timeArrivedSecondOld;
-                } else if (
-                    noEmptyArr.length == 13 &&
-                    noEmptyArr[0].length == 6
-                ) {
-                    timeDepartureFirstOld = noEmptyArr[7].slice(0, 2);
-                    timeDepartureSecondOld = noEmptyArr[7].slice(2, 4);
-                    timeDeparture =
-                        timeDepartureFirstOld + ':' + timeDepartureSecondOld;
-
-                    timeArrivedFirstOld = noEmptyArr[8].slice(0, 2);
-                    timeArrivedSecondOld = noEmptyArr[8].slice(2, 4);
-                    timeArrived =
-                        timeArrivedFirstOld + ':' + timeArrivedSecondOld;
-                } else if (
-                    noEmptyArr[0].length == 6 &&
-                    noEmptyArr[6].length == 4
-                ) {
+                if (noEmptyArr[0].length == 6 && noEmptyArr[6].length == 4) {
                     timeDepartureFirstOld = noEmptyArr[6].slice(0, 2);
                     timeDepartureSecondOld = noEmptyArr[6].slice(2, 4);
                     timeDeparture =
