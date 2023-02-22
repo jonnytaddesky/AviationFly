@@ -7,11 +7,26 @@
     padding: 200px;
 }
 
-.result {
+/* .result {
     margin-left: 20px;
-    padding: 20px;
+    padding: 60px;
     width: auto;
     background-color: lightgrey;
+} */
+.form-group {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form-result {
+    flex: 1 0 25%;
+    border: #fff solid 1px;
+    padding: auto;
+    margin: auto;
+    background: lightgray;
+    width: 980px;
 }
 #labelPnr {
     margin-left: 20px;
@@ -23,8 +38,14 @@
     width: 500px;
     float: left;
 }
-.btn-success {
+.success {
     margin-left: 10px;
+    background-color: greenyellow;
+}
+
+.again {
+    margin-left: 10px;
+    background-color: red;
 }
 
 .about-us {
