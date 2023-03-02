@@ -23,10 +23,13 @@
 .form-result {
     flex: 1 0 25%;
     border: #fff solid 1px;
-    padding: auto;
+    padding: 20px;
     margin: auto;
     background: lightgray;
     width: 980px;
+}
+ul {
+    list-style-type: none;
 }
 #labelPnr {
     margin-left: 20px;

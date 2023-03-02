@@ -8,12 +8,11 @@ const pnrText = function () {
     return document.querySelector('.form-control').value;
 };
 const resultMessage = function (resultArray) {
-    // console.log(resultArray);
-    let resultString = '';
-    for (let i = 0; i < resultArray.length; i++) {
-        resultString += '\n' + resultArray[i] + '\n';
-    }
-    document.querySelector('.result').textContent = resultString;
+    resultArray.forEach(el => {
+        let listItem = document.createElement('li');
+        listItem.innerText = el;
+        document.querySelector('.result').append(listItem);
+    });
 };
 
 $.getJSON('data.json', function (json) {
@@ -129,15 +128,12 @@ function mainFunc(noEmptyArr) {
     } else {
         console.log('error');
     }
-    console.log(
-        `${date}.,${timeDeparture} - ${timeArrived}, ${departureCountry} (${departureAirport}) - ${arrivedCountry} (${arrivedAirport}), ${aviaCompany}`
-    );
-    resultArray.push(
-        `${date}.,${timeDeparture} - ${timeArrived}, ${departureCountry} (${departureAirport}) - ${arrivedCountry} (${arrivedAirport}), ${aviaCompany}`
-    );
-    console.log(resultArray);
-    resultMessage(resultArray);
-    // document.querySelector('.form-control').value = '';
+    // resultArray.push(
+    //     `${date}.,${timeDeparture} - ${timeArrived}, ${departureCountry} (${departureAirport}) - ${arrivedCountry} (${arrivedAirport}), ${aviaCompany}`
+    // );
+    return `${date}.,${timeDeparture} - ${timeArrived}, ${departureCountry} (${departureAirport}) - ${arrivedCountry} (${arrivedAirport}), ${aviaCompany}`;
+    // console.log(resultArray);
+    // resultMessage(resultArray);
 }
 
 document.querySelector('.success').addEventListener('click', function () {
@@ -149,20 +145,21 @@ document.querySelector('.success').addEventListener('click', function () {
     // let resultArray = [];
     for (let i = 0; i <= arrayPNR.length - 2; i++) {
         if (i === 0) {
-            let EmptyArr = arrayPNR[i].split(' ');
+            const EmptyArr = arrayPNR[i].split(' ');
             const noEmptyArr = EmptyArr.filter(str => str !== '');
             // console.log(noEmptyArr);
-            // const str = noEmptyArr.join(' ');
-            // console.log(str);
-            console.log();
-            mainFunc(noEmptyArr);
-            // ось тут визвати функція який обробляє дані та вивводить їх
+            const res = mainFunc(noEmptyArr);
+            let resultArray = [];
+            resultArray.push(res);
+            resultMessage(resultArray);
         } else if (i % 3 === 0) {
-            let EmptyArr = arrayPNR[i].replace(/^\d+\s*/, '').split(' ');
+            const EmptyArr = arrayPNR[i].replace(/^\d+\s*/, '').split(' ');
             const noEmptyArr = EmptyArr.filter(str => str !== '');
-            // ось тут визвати функція який обробляє дані та вивводить їх
             // console.log(noEmptyArr);
-            mainFunc(noEmptyArr);
+            const res = mainFunc(noEmptyArr);
+            let resultArray = [];
+            resultArray.push(res);
+            resultMessage(resultArray);
         }
     }
 
