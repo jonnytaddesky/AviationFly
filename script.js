@@ -132,13 +132,19 @@ function mainFunc(noEmptyArr) {
     //     `${date}.,${timeDeparture} - ${timeArrived}, ${departureCountry} (${departureAirport}) - ${arrivedCountry} (${arrivedAirport}), ${aviaCompany}`
     // );
     return `${date}.,${timeDeparture} - ${timeArrived}, ${departureCountry} (${departureAirport}) - ${arrivedCountry} (${arrivedAirport}), ${aviaCompany}`;
-    // console.log(resultArray);
-    // resultMessage(resultArray);
 }
 
 document.querySelector('.success').addEventListener('click', function () {
     const pnr_text = pnrText();
-    // console.log(pnr_text);
+    console.log(pnr_text);
+
+    //// ось сюди вставити перевірку на кількість елементів встрочці
+    // if (pnr_text.includes('\n')) {
+    //     console.log('Елемент містить перенос рядка і не є з однієї строчки');
+    // } else {
+    //     console.log('Елемент складається з однієї строчки');
+    // }
+
     const arrayPNR = pnr_text.split(/\n\s*/);
     // console.log(arrayPNR);
     // зробити if якщо текст який прийщов буде рівний pnr_text.split(/\n\s*/); то використовувати для всіх, інакще для одної строчки
