@@ -1,6 +1,6 @@
 'use strict';
 
-let resultArray = [];
+// let resultArray = [];
 // console.log(resultArray);
 let dataJson;
 // console.log(resultArray);
@@ -67,6 +67,15 @@ function mainFunc(noEmptyArr) {
 
             timeArrivedFirstOld = noEmptyArr[10].slice(0, 2);
             timeArrivedSecondOld = noEmptyArr[10].slice(2, 4);
+            timeArrived = timeArrivedFirstOld + ':' + timeArrivedSecondOld;
+        } else if (noEmptyArr.length == 14) {
+            timeDepartureFirstOld = noEmptyArr[8].slice(0, 2);
+            timeDepartureSecondOld = noEmptyArr[8].slice(2, 4);
+            timeDeparture =
+                timeDepartureFirstOld + ':' + timeDepartureSecondOld;
+
+            timeArrivedFirstOld = noEmptyArr[9].slice(0, 2);
+            timeArrivedSecondOld = noEmptyArr[9].slice(2, 4);
             timeArrived = timeArrivedFirstOld + ':' + timeArrivedSecondOld;
         } else if (noEmptyArr.length == 13 && noEmptyArr[0].length == 6) {
             timeDepartureFirstOld = noEmptyArr[7].slice(0, 2);
@@ -136,42 +145,47 @@ function mainFunc(noEmptyArr) {
 
 document.querySelector('.success').addEventListener('click', function () {
     const pnr_text = pnrText();
-    console.log(pnr_text);
-
-    //// ось сюди вставити перевірку на кількість елементів встрочці
-    if (pnr_text.includes('\n')) {
-        console.log('Елемент містить перенос рядка і не є з однієї строчки');
-    } else {
-        console.log('Елемент складається з однієї строчки');
-    }
-
+    // console.log(pnr_text);
     const arrayPNR = pnr_text.split(/\n\s*/);
     // console.log(arrayPNR);
-    // зробити if якщо текст який прийщов буде рівний pnr_text.split(/\n\s*/); то використовувати для всіх, інакще для одної строчки
-    // let resultArray = [];
-    for (let i = 0; i <= arrayPNR.length - 2; i++) {
-        if (i === 0) {
-            const EmptyArr = arrayPNR[i].split(' ');
-            const noEmptyArr = EmptyArr.filter(str => str !== '');
-            // console.log(noEmptyArr);
+    let resultArray = [];
+    // console.log(resultArray);
+    for (let i = 0; i < arrayPNR.length; i++) {
+        // console.log(arrayPNR[i]);
+        const EmptyArr = arrayPNR[i].replace(/^\d+\s*/, '').split(' ');
+        console.log(EmptyArr);
+        const noEmptyArr = EmptyArr.filter(str => str !== '');
+        console.log(noEmptyArr);
+        if (noEmptyArr.length > 11) {
+            // let resultArray = [];
             const res = mainFunc(noEmptyArr);
-            let resultArray = [];
+            // console.log(res);
             resultArray.push(res);
-            resultMessage(resultArray);
-        } else if (i % 3 === 0) {
-            const EmptyArr = arrayPNR[i].replace(/^\d+\s*/, '').split(' ');
-            const noEmptyArr = EmptyArr.filter(str => str !== '');
-            // console.log(noEmptyArr);
-            const res = mainFunc(noEmptyArr);
-            let resultArray = [];
-            resultArray.push(res);
-            resultMessage(resultArray);
+            console.log(resultArray);
         }
     }
+    resultMessage(resultArray);
 
     document.querySelector('.form-control').value = '';
 });
 
 document.querySelector('.again').addEventListener('click', function () {
     location.reload();
+});
+
+document.querySelector('.primary').addEventListener('click', function () {
+    // Отримання посилання на елемент з класом result
+    let resultElement = document.querySelector('.result');
+
+    // Отримання текстового значення елементу
+    let resultText = resultElement.innerText;
+
+    // Створення нового текстового об'єкту та копіювання його до буферу обміну
+    let tempTextArea = document.createElement('textarea');
+    tempTextArea.value = resultText;
+    document.body.appendChild(tempTextArea);
+    tempTextArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempTextArea);
+    alert('List copied to clipboard');
 });
