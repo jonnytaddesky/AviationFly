@@ -40,11 +40,11 @@ ul {
 }
 
 .again {
-    margin-left: 10px;
+    margin-left: 100px;
     width: 25%;
     height: 50px;
     color: white;
-    background-color: #a62b1f;
+    background-color: #ffb30d;
 }
 
 .about-us {
@@ -53,5 +53,17 @@ ul {
     width: 1000px;
     font-size: 21px;
 }
-.button-app {
+.success:hover {
+    color: white;
+    transform: scale(1.2); /* Збільшення розміру кнопки на 20% */
+    background-color: #dbf227; /* Зміна кольору фону кнопки на червоний */
+    border: 1px solid #a8b545; /* Додати товщину та колір рамки при наведенні */
+    box-shadow: 2px 2px 2px #ccc;
+}
+.again:hover {
+    color: red;
+    transform: scale(1.2); /* Збільшення розміру кнопки на 20% */
+    background-color: #edaa25; /* Зміна кольору фону кнопки на червоний */
+    border: 1px solid #ffb30d; /* Додати товщину та колір рамки при наведенні */
+    box-shadow: 2px 2px 2px #ccc;
 }
