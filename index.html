@@ -26,8 +26,8 @@
                 </ul>
             </div>
         </nav>
+        <div><center class="cnt">Paste PNR from Amadeus :</center></div>
         <div class="form-group">
-            <label for="PNR" id="labelPnr">Paste PNR from any GDS :</label>
             <!-- <input type="text" class="form-control" id="usr" /> -->
             <textarea
                 type="text"
@@ -37,11 +37,15 @@
                 class="form-control"
                 id="usr"
             ></textarea>
-            <button type="button" class="btn success">Check</button>
-            <button type="button" class="btn again">Reset</button>
+        </div>
+        <div>
+            <center class="button-app">
+                <button type="button" class="btn success">Check</button>
+                <button type="button" class="btn again">Reset</button>
+            </center>
         </div>
         <div class="form-result">
-            <ul class="result"></ul>
+            <ul class="result" id="myList"></ul>
         </div>
         <script src="script.js"></script>
     </body>

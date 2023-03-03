@@ -139,11 +139,11 @@ document.querySelector('.success').addEventListener('click', function () {
     console.log(pnr_text);
 
     //// ось сюди вставити перевірку на кількість елементів встрочці
-    // if (pnr_text.includes('\n')) {
-    //     console.log('Елемент містить перенос рядка і не є з однієї строчки');
-    // } else {
-    //     console.log('Елемент складається з однієї строчки');
-    // }
+    if (pnr_text.includes('\n')) {
+        console.log('Елемент містить перенос рядка і не є з однієї строчки');
+    } else {
+        console.log('Елемент складається з однієї строчки');
+    }
 
     const arrayPNR = pnr_text.split(/\n\s*/);
     // console.log(arrayPNR);
