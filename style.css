@@ -32,19 +32,30 @@ ul {
     /* float: left; */
 }
 .success {
-    margin-left: 10px;
-    background-color: #9fc131;
+    /* margin-left: 10px; */
     width: 25%;
     height: 50px;
     color: white;
+    background-color: #9fc131;
+    display: flex;
 }
 
 .again {
-    margin-left: 100px;
+    /* margin-left: 100px; */
     width: 25%;
     height: 50px;
     color: white;
     background-color: #ffb30d;
+    display: flex;
+}
+
+.primary {
+    /* margin-left: 100px; */
+    width: 25%;
+    height: 50px;
+    color: white;
+    display: flex;
+    background-color: #164773;
 }
 
 .about-us {
@@ -65,5 +76,12 @@ ul {
     transform: scale(1.2); /* Збільшення розміру кнопки на 20% */
     background-color: #edaa25; /* Зміна кольору фону кнопки на червоний */
     border: 1px solid #ffb30d; /* Додати товщину та колір рамки при наведенні */
+    box-shadow: 2px 2px 2px #ccc;
+}
+.primary:hover {
+    color: red;
+    transform: scale(1.2); /* Збільшення розміру кнопки на 20% */
+    background-color: #0099dd; /* Зміна кольору фону кнопки на червоний */
+    border: 1px solid #164773; /* Додати товщину та колір рамки при наведенні */
     box-shadow: 2px 2px 2px #ccc;
 }
