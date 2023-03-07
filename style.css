@@ -264,3 +264,30 @@ ul {
     font-size: 20px;
     letter-spacing: 1px;
 }
+
+#myDivPrice {
+    border: #fff solid 1px;
+    border-radius: 10px;
+    padding: 15px 15px;
+    margin: 20px 20px;
+    color: white;
+    height: 100px;
+}
+
+#myDivBaggage {
+    border: #fff solid 1px;
+    border-radius: 10px;
+    padding: 15px 15px;
+    margin: 20px 20px;
+    color: white;
+    height: 100px;
+}
+
+#myDivHandBaggage {
+    border: #fff solid 1px;
+    border-radius: 10px;
+    padding: 15px 15px;
+    margin: 20px 20px;
+    color: white;
+    height: 100px;
+}
