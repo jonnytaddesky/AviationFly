@@ -7,11 +7,19 @@ let dataJson;
 const pnrText = function () {
     return document.querySelector('.form-control').value;
 };
+const styleCss = document.querySelector('.result').style;
 const resultMessage = function (resultArray) {
     resultArray.forEach(el => {
         let listItem = document.createElement('li');
         listItem.innerText = el;
         document.querySelector('.result').append(listItem);
+        styleCss.flex = '1 0 25%';
+        styleCss.border = '#fff solid 1px';
+        styleCss.borderRadius = '10px';
+        styleCss.padding = '15px 15px';
+        styleCss.margin = '20px 20px';
+        styleCss.backgroundColor = '#68c398';
+        styleCss.color = 'white';
     });
 };
 
