@@ -234,9 +234,9 @@ ul {
 
 .instagram:hover {
     color: white;
-    transform: scale(1.03); /* Збільшення розміру кнопки на 20% */
-    background-color: #018b4f; /* Зміна кольору фону кнопки на червоний */
-    border: 1px solid grey; /* Додати товщину та колір рамки при наведенні */
+    transform: scale(1.03);
+    background-color: #018b4f;
+    border: 1px solid grey;
     box-shadow: 2px 2px 2px #ccc;
     transition: 100ms;
     font-size: 20px;
@@ -244,9 +244,9 @@ ul {
 }
 .facebook:hover {
     color: white;
-    transform: scale(1.03); /* Збільшення розміру кнопки на 20% */
-    background-color: #ee1c25; /* Зміна кольору фону кнопки на червоний */
-    border: 1px solid grey; /* Додати товщину та колір рамки при наведенні */
+    transform: scale(1.03);
+    background-color: #ee1c25;
+    border: 1px solid grey;
     box-shadow: 2px 2px 2px #ccc;
     transition: 100ms;
     font-size: 20px;
@@ -255,9 +255,9 @@ ul {
 
 .email:hover {
     color: white;
-    transform: scale(1.03); /* Збільшення розміру кнопки на 20% */
-    background-color: #faa91c; /* Зміна кольору фону кнопки на червоний */
-    border: 1px solid grey; /* Додати товщину та колір рамки при наведенні */
+    transform: scale(1.03);
+    background-color: #faa91c;
+    border: 1px solid grey;
     box-shadow: 2px 2px 2px #ccc;
     color: white;
     transition: 100ms;
