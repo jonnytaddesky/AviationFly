@@ -171,11 +171,10 @@ ul {
 .about-us {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: auto;
     font-size: 25px;
     background-color: #68c398;
 }
@@ -183,7 +182,7 @@ ul {
     width: 60px;
     background-color: transparent;
 }
-/* #FCB95E #8D35BF*/
+
 .instagram {
     width: 50%;
     margin-left: 20px;
@@ -263,4 +262,8 @@ ul {
     transition: 100ms;
     font-size: 20px;
     letter-spacing: 1px;
+}
+
+input {
+    color: black;
 }

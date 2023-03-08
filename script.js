@@ -7,12 +7,14 @@ let dataJson;
 const pnrText = function () {
     return document.querySelector('.form-control').value;
 };
-const styleCss = document.querySelector('.result').style;
+
 const resultMessage = function (resultArray) {
+    const styleCss = document.querySelector('.form-result').style;
     resultArray.forEach(el => {
         let listItem = document.createElement('li');
         listItem.innerText = el;
         document.querySelector('.result').append(listItem);
+
         styleCss.flex = '1 0 25%';
         styleCss.border = '#fff solid 1px';
         styleCss.borderRadius = '10px';
@@ -20,6 +22,19 @@ const resultMessage = function (resultArray) {
         styleCss.margin = '20px 20px';
         styleCss.backgroundColor = '#68c398';
         styleCss.color = 'white';
+        styleCss.height = 'auto';
+
+        let myLabelPrice = document.createElement('label');
+        myLabelPrice.textContent = 'Ціна: ';
+        document.querySelector('.result').append(myLabelPrice);
+
+        let myTextPrice = document.createElement('input');
+        myTextPrice.value = '';
+        document.querySelector('.result').append(myTextPrice);
+        myTextPrice.style.color = 'black';
+        myTextPrice.style.marginLeft = '10px';
+        myTextPrice.style.paddingLeft = '10px';
+        myTextPrice.style.borderRadius = '10px';
     });
 };
 
@@ -181,19 +196,44 @@ document.querySelector('.again').addEventListener('click', function () {
     location.reload();
 });
 
+// document.querySelector('.primary').addEventListener('click', function () {
+//     // Отримання посилання на елемент з класом result
+//     let resultElement = document.querySelector('.result');
+
+//     // Отримання текстового значення елементу
+//     let resultText = resultElement.innerText;
+
+//     // Створення нового текстового об'єкту та копіювання його до буферу обміну
+//     let tempTextArea = document.createElement('textarea');
+//     tempTextArea.value = resultText;
+//     document.body.appendChild(tempTextArea);
+//     tempTextArea.select();
+//     document.execCommand('copy');
+//     document.body.removeChild(tempTextArea);
+//     alert('List copied to clipboard');
+// });
+
 document.querySelector('.primary').addEventListener('click', function () {
-    // Отримання посилання на елемент з класом result
-    let resultElement = document.querySelector('.result');
+    const myDiv = document.getElementById('myDiv');
+    const myLabels = myDiv.querySelectorAll('label');
+    const myInputs = myDiv.querySelectorAll('input');
 
-    // Отримання текстового значення елементу
-    let resultText = resultElement.innerText;
+    for (let i = 0; i < myLabels.length; i++) {
+        myLabels[i].style.display = 'inline-block';
+        myInputs[i].style.display = 'inline-block';
+    }
 
-    // Створення нового текстового об'єкту та копіювання його до буферу обміну
-    let tempTextArea = document.createElement('textarea');
-    tempTextArea.value = resultText;
-    document.body.appendChild(tempTextArea);
-    tempTextArea.select();
+    const range = document.createRange();
+    range.selectNode(myDiv);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+
     document.execCommand('copy');
-    document.body.removeChild(tempTextArea);
+
+    for (let i = 0; i < myLabels.length; i++) {
+        myLabels[i].style.display = '';
+        myInputs[i].style.display = '';
+    }
     alert('List copied to clipboard');
 });
