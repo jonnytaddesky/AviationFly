@@ -171,11 +171,9 @@ ul {
 .about-us {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
     border-radius: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: auto;
+    padding: auto;
     font-size: 25px;
     background-color: #68c398;
 }
