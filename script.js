@@ -12,13 +12,8 @@ const resultMessage = function (resultArray) {
     const styleCss = document.querySelector('.form-result').style;
     resultArray.forEach(el => {
         let listItem = document.createElement('li');
-        let myPrice = document.createElement('label');
-        let myLabelPrice = document.createElement('input');
         listItem.innerText = el;
         document.querySelector('.result').append(listItem);
-        myPrice.textContent = 'Ціна: ';
-        document.querySelector('.result').append(myPrice);
-        document.querySelector('.result').append(myLabelPrice);
 
         styleCss.flex = '1 0 25%';
         styleCss.border = '#fff solid 1px';
@@ -28,90 +23,20 @@ const resultMessage = function (resultArray) {
         styleCss.backgroundColor = '#68c398';
         styleCss.color = 'white';
         styleCss.height = 'auto';
+
+        let myLabelPrice = document.createElement('label');
+        myLabelPrice.textContent = 'Ціна: ';
+        document.querySelector('.result').append(myLabelPrice);
+
+        let myTextPrice = document.createElement('input');
+        myTextPrice.value = '';
+        document.querySelector('.result').append(myTextPrice);
+        myTextPrice.style.color = 'black';
+        myTextPrice.style.marginLeft = '10px';
+        myTextPrice.style.paddingLeft = '10px';
+        myTextPrice.style.borderRadius = '10px';
     });
-    // const myDivPrice = document.getElementById('myDivPrice'); // знаходимо div
-    // const myPrice = document.createElement('label');
-    // const myTextboxPrice = document.createElement('input'); // створюємо новий елемент input
-
-    // const myDivBaggage = document.getElementById('myDivBaggage');
-    // const myBaggage = document.createElement('label');
-    // const myTextboxBaggage = document.createElement('input');
-
-    // const myDivHandBaggage = document.getElementById('myDivHandBaggage');
-    // const myHandBaggage = document.createElement('label');
-    // const myTextboxHandBaggage = document.createElement('input');
-
-    // myTextboxPrice.setAttribute('type', 'text');
-    // myPrice.textContent = 'Ціна: ';
-
-    // myDivPrice.style.backgroundColor = '#68c398';
-    // myTextboxPrice.style.color = 'black';
-    // myTextboxPrice.style.borderRadius = '10px';
-    // myPrice.style.fontSize = '15px';
-    // myPrice.style.letterSpacing = '1px';
-    // myTextboxPrice.height = '100px';
-    // myTextboxPrice.style.display = 'block';
-    // myTextboxPrice.style.width = '200px';
-    // myTextboxPrice.style.padding = '5px 5px';
-    // myTextboxPrice.style.fontSize = '20px';
-    // myTextboxPrice.style.borderRadius = '10px';
-    // myTextboxPrice.style.fontWeight = '400';
-    // myTextboxPrice.style.lineHeight = '1.5';
-    // myTextboxPrice.style.color = '#212529';
-    // myTextboxPrice.style.borderRadius = '10px';
-    // myDivPrice.style.display = 'inline-block';
-    // myDivPrice.style.float = 'left';
-
-    // myDivPrice.appendChild(myPrice);
-    // myDivPrice.appendChild(myTextboxPrice);
-
-    // myTextboxBaggage.setAttribute('type', 'text');
-    // myBaggage.textContent = 'Багаж: ';
-    // myDivHandBaggage.style.backgroundColor = '#68c398';
-    // myTextboxBaggage.style.color = 'black';
-    // myTextboxBaggage.style.borderRadius = '10px';
-    // myBaggage.style.fontSize = '15px';
-    // myBaggage.style.letterSpacing = '1px';
-    // myTextboxBaggage.height = '100px';
-    // myTextboxBaggage.style.display = 'block';
-    // myTextboxBaggage.style.width = '200px';
-    // myTextboxBaggage.style.padding = '5px 5px';
-    // myTextboxBaggage.style.fontSize = '20px';
-    // myTextboxBaggage.style.borderRadius = '10px';
-    // myTextboxBaggage.style.fontWeight = '400';
-    // myTextboxBaggage.style.lineHeight = '1.5';
-    // myTextboxBaggage.style.color = '#212529';
-    // myTextboxBaggage.style.borderRadius = '10px';
-    // myBaggage.style.display = 'inline-block';
-    // myDivHandBaggage.style.float = 'left';
-
-    // myDivHandBaggage.appendChild(myBaggage);
-    // myDivHandBaggage.appendChild(myTextboxBaggage);
-
-    // myTextboxHandBaggage.setAttribute('type', 'text');
-    // myHandBaggage.textContent = 'Багаж: ';
-    // myDivBaggage.style.backgroundColor = '#68c398';
-    // myTextboxHandBaggage.style.color = 'black';
-    // myTextboxHandBaggage.style.borderRadius = '10px';
-    // myHandBaggage.style.fontSize = '15px';
-    // myHandBaggage.style.letterSpacing = '1px';
-    // myTextboxHandBaggage.height = '100px';
-    // myTextboxHandBaggage.style.display = 'block';
-    // myTextboxHandBaggage.style.width = '200px';
-    // myTextboxHandBaggage.style.padding = '5px 5px';
-    // myTextboxHandBaggage.style.fontSize = '20px';
-    // myTextboxHandBaggage.style.borderRadius = '10px';
-    // myTextboxHandBaggage.style.fontWeight = '400';
-    // myTextboxHandBaggage.style.lineHeight = '1.5';
-    // myTextboxHandBaggage.style.color = '#212529';
-    // myTextboxHandBaggage.style.borderRadius = '10px';
-    // myHandBaggage.style.display = 'inline-block';
-    // myDivBaggage.style.float = 'left';
-
-    // myDivBaggage.appendChild(myHandBaggage);
-    // myDivBaggage.appendChild(myTextboxHandBaggage);
 };
-// додаємо елемент до div
 
 $.getJSON('data.json', function (json) {
     dataJson = json;
@@ -271,19 +196,44 @@ document.querySelector('.again').addEventListener('click', function () {
     location.reload();
 });
 
+// document.querySelector('.primary').addEventListener('click', function () {
+//     // Отримання посилання на елемент з класом result
+//     let resultElement = document.querySelector('.result');
+
+//     // Отримання текстового значення елементу
+//     let resultText = resultElement.innerText;
+
+//     // Створення нового текстового об'єкту та копіювання його до буферу обміну
+//     let tempTextArea = document.createElement('textarea');
+//     tempTextArea.value = resultText;
+//     document.body.appendChild(tempTextArea);
+//     tempTextArea.select();
+//     document.execCommand('copy');
+//     document.body.removeChild(tempTextArea);
+//     alert('List copied to clipboard');
+// });
+
 document.querySelector('.primary').addEventListener('click', function () {
-    // Отримання посилання на елемент з класом result
-    let resultElement = document.querySelector('.result');
+    const myDiv = document.getElementById('myDiv');
+    const myLabels = myDiv.querySelectorAll('label');
+    const myInputs = myDiv.querySelectorAll('input');
 
-    // Отримання текстового значення елементу
-    let resultText = resultElement.innerText;
+    for (let i = 0; i < myLabels.length; i++) {
+        myLabels[i].style.display = 'inline-block';
+        myInputs[i].style.display = 'inline-block';
+    }
 
-    // Створення нового текстового об'єкту та копіювання його до буферу обміну
-    let tempTextArea = document.createElement('textarea');
-    tempTextArea.value = resultText;
-    document.body.appendChild(tempTextArea);
-    tempTextArea.select();
+    const range = document.createRange();
+    range.selectNode(myDiv);
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(range);
+
     document.execCommand('copy');
-    document.body.removeChild(tempTextArea);
+
+    for (let i = 0; i < myLabels.length; i++) {
+        myLabels[i].style.display = '';
+        myInputs[i].style.display = '';
+    }
     alert('List copied to clipboard');
 });
