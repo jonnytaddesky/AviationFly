@@ -18,23 +18,11 @@ const resultMessage = function (resultArray) {
         styleCss.flex = '1 0 25%';
         styleCss.border = '#fff solid 1px';
         styleCss.borderRadius = '10px';
-        styleCss.padding = '15px 15px';
-        styleCss.margin = '20px 20px';
-        styleCss.backgroundColor = '#68c398';
-        styleCss.color = 'white';
-        styleCss.height = 'auto';
-
-        let myLabelPrice = document.createElement('label');
-        myLabelPrice.textContent = 'Ціна: ';
-        document.querySelector('.result').append(myLabelPrice);
-
-        let myTextPrice = document.createElement('input');
-        myTextPrice.value = '';
-        document.querySelector('.result').append(myTextPrice);
-        myTextPrice.style.color = 'black';
-        myTextPrice.style.marginLeft = '10px';
-        myTextPrice.style.paddingLeft = '10px';
-        myTextPrice.style.borderRadius = '10px';
+        styleCss.padding = '15px 25px';
+        styleCss.marginLeft = '20px';
+        styleCss.backgroundColor = '#c0c0c0';
+        styleCss.color = 'black';
+        // styleCss.height = 'auto';
     });
 };
 
