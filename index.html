@@ -5,7 +5,6 @@
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="style.css" />
         <link
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -13,6 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css" />
         <title>IATA Search</title>
     </head>
     <body>
@@ -43,15 +43,23 @@
             </center>
         </div>
         <div class="app">
-            <textarea
-                type="text"
-                name="Text1"
-                rows="6"
-                column="1"
-                class="textarea-element"
-            ></textarea>
-            <div class="form-result" id="myDiv">
-                <ul class="result"></ul>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 p-3">
+                        <textarea
+                            type="text"
+                            name="Text1"
+                            rows="6"
+                            column="1"
+                            class="input-field"
+                        ></textarea>
+                    </div>
+                    <div class="col-lg-6 p-3">
+                        <div class="form-result" id="myDiv">
+                            <ul class="result"></ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

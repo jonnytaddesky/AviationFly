@@ -5,7 +5,7 @@
 let dataJson;
 // console.log(resultArray);
 const pnrText = function () {
-    return document.querySelector('.textarea-element').value;
+    return document.querySelector('.input-field').value;
 };
 
 const resultMessage = function (resultArray) {

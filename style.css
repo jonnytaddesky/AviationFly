@@ -53,28 +53,25 @@
     right: 0;
     transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
-.app {
-    display: flex;
-    flex-direction: column;
+.container-fluid {
+    width: 100%;
 }
 
-.textarea-element {
+.app {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.input-field {
     width: 100%;
-    height: 100px;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 10px;
 }
 .form-result {
     width: 100%;
-    height: auto;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 20px;
     background-color: #c0c0c0;
 }
 
@@ -87,7 +84,7 @@ ul {
     display: flex;
     font-size: 15px;
 }
-@media (min-width: 391px) {
+/* @media (min-width: 391px) {
     .app {
         flex-direction: row;
         justify-content: center;
@@ -96,7 +93,8 @@ ul {
     }
 
     .textarea-element {
-        justify-content: center;
+        justify-conte
+        nt: center;
         width: 100%;
         height: auto;
     }
@@ -106,7 +104,7 @@ ul {
         width: 100%;
         height: auto;
     }
-}
+} */
 .cnt {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 10px;
