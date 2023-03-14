@@ -60,3 +60,7 @@ LO 281 C 25MAR 6 WAWLHR HK1          0735 0935   7M8 E 0 M
      PSGR CONTACT INFORMATION REQUIRED
      SEE RTSVC
 ```
+
+## Скріншоти програми:
+
+![](https://github.com/jonnytaddesky/AviationFly/blob/main/Screenshot/mainPage.png)
