@@ -18,11 +18,10 @@ const resultMessage = function (resultArray) {
         styleCss.flex = '1 0 25%';
         styleCss.border = '#fff solid 1px';
         styleCss.borderRadius = '10px';
-        styleCss.padding = '15px 25px';
+        styleCss.padding = '15px';
         styleCss.marginLeft = '20px';
         styleCss.backgroundColor = '#c0c0c0';
         styleCss.color = 'black';
-        // styleCss.height = 'auto';
     });
 };
 
