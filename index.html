@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="style.css" />
@@ -35,19 +35,6 @@
         <div>
             <center class="cnt">Paste PNR from Amadeus :</center>
         </div>
-        <div class="app">
-            <textarea
-                type="text"
-                name="Text1"
-                rows="6"
-                column="1"
-                class="input-field"
-            ></textarea>
-
-            <div class="form-result" id="myDiv">
-                <ul class="result"></ul>
-            </div>
-        </div>
         <div>
             <center class="button-app">
                 <button type="button" class="success">Check</button>
@@ -55,6 +42,19 @@
                 <button type="button" class="primary">Copy</button>
             </center>
         </div>
+        <div class="app">
+            <textarea
+                type="text"
+                name="Text1"
+                rows="6"
+                column="1"
+                class="textarea-element"
+            ></textarea>
+            <div class="form-result" id="myDiv">
+                <ul class="result"></ul>
+            </div>
+        </div>
+
         <script src="script.js"></script>
     </body>
 </html>
