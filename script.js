@@ -147,9 +147,6 @@ function mainFunc(noEmptyArr) {
     } else {
         console.log('error');
     }
-    // resultArray.push(
-    //     `${date}.,${timeDeparture} - ${timeArrived}, ${departureCountry} (${departureAirport}) - ${arrivedCountry} (${arrivedAirport}), ${aviaCompany}`
-    // );
     return `${date}.,${timeDeparture} - ${timeArrived}, ${departureCountry} (${departureAirport}) - ${arrivedCountry} (${arrivedAirport}), ${aviaCompany}`;
 }
 
@@ -182,23 +179,6 @@ document.querySelector('.success').addEventListener('click', function () {
 document.querySelector('.again').addEventListener('click', function () {
     location.reload();
 });
-
-// document.querySelector('.primary').addEventListener('click', function () {
-//     // Отримання посилання на елемент з класом result
-//     let resultElement = document.querySelector('.result');
-
-//     // Отримання текстового значення елементу
-//     let resultText = resultElement.innerText;
-
-//     // Створення нового текстового об'єкту та копіювання його до буферу обміну
-//     let tempTextArea = document.createElement('textarea');
-//     tempTextArea.value = resultText;
-//     document.body.appendChild(tempTextArea);
-//     tempTextArea.select();
-//     document.execCommand('copy');
-//     document.body.removeChild(tempTextArea);
-//     alert('List copied to clipboard');
-// });
 
 document.querySelector('.primary').addEventListener('click', function () {
     const myDiv = document.getElementById('myDiv');
