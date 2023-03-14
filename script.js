@@ -9,19 +9,19 @@ const pnrText = function () {
 };
 
 const resultMessage = function (resultArray) {
-    const styleCss = document.querySelector('.form-result').style;
+    // const styleCss = document.querySelector('.form-result').style;
     resultArray.forEach(el => {
         let listItem = document.createElement('li');
         listItem.innerText = el;
         document.querySelector('.result').append(listItem);
 
-        styleCss.border = '#fff solid 1px';
-        styleCss.borderRadius = '10px';
-        styleCss.backgroundColor = '#c0c0c0';
-        styleCss.color = 'black';
-        styleCss.width = '50%';
-        styleCss.marginRight = '20px';
-        styleCss.padding = '10px';
+        // styleCss.border = '#fff solid 1px';
+        // styleCss.borderRadius = '10px';
+        // styleCss.backgroundColor = '#c0c0c0';
+        // styleCss.color = 'black';
+        // styleCss.width = '50%';
+        // styleCss.marginRight = '20px';
+        // styleCss.padding = '10px';
     });
 };
 
