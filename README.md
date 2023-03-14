@@ -12,13 +12,13 @@
 -   Visual Studio Code
 -   Google Chrome
 
-### Використовував мои програмування та розмітки сторінок:
+### мови програмування та розмітки web-сторінок:
 
 -   JavaScript
 -   HTML/CSS
 -   Bootstrap
 
-### Для доступу до бази IATCode:
+### для доступу до файлу з даними IATCode:
 
 -   jQuery
 -   Json
