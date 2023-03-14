@@ -30,3 +30,13 @@
 ### За допомогою інструменту нижче витягнув з сайту IATCode усіх аеропортів світу
 
 -   Microsoft PowerBI
+
+## Приклади коду з системи Amadeus, який зчитує дана програма:
+
+```
+BA 847 J 25MAR 6 WAWLHR HK1          1250 1440   319 E 0 M
+     SEE RTSVC
+  2  BA 269 J 25MAR 6 LHRLAX HK1       5  1545 2005   388 E 0 M
+     SEE RTSVC
+  3  LO 024 C 30MAR 4 LAXWAW HK1       B  2205 1840+1 788 E 0 DB
+```
