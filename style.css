@@ -56,31 +56,32 @@
 .name-site {
     color: white;
 }
-.form-control {
+
+@media (max-width: 390px) {
+    .input-field,
+    .form-result {
+        width: 100%;
+    }
+}
+.app {
+    display: flex;
+}
+
+.input-field {
+    width: 50%;
+    display: block;
     background-color: #fff;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 10px;
     margin-left: 20px;
     margin-right: 20px;
-    padding-right: 1000px;
+    padding: 10px;
 }
 ul {
     list-style-type: none;
     font-size: 17px;
 }
-.form-control.form-result {
-    flex: 1 0 50%;
-}
-@media (max-width: 390px) {
-    .form-control,
-    .form-result {
-        flex: 1 0 100%;
-    }
-}
-.app {
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .cnt {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 10px;

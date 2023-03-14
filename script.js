@@ -5,7 +5,7 @@
 let dataJson;
 // console.log(resultArray);
 const pnrText = function () {
-    return document.querySelector('.form-control').value;
+    return document.querySelector('.input-field').value;
 };
 
 const resultMessage = function (resultArray) {
@@ -15,15 +15,13 @@ const resultMessage = function (resultArray) {
         listItem.innerText = el;
         document.querySelector('.result').append(listItem);
 
-        styleCss.flex = '1 0 50%';
         styleCss.border = '#fff solid 1px';
-        styleCss.marginLeft = '20px';
-        styleCss.marginRight = '20px';
-        styleCss.marginTop = '10px';
-        styleCss.padding = '10px';
         styleCss.borderRadius = '10px';
         styleCss.backgroundColor = '#c0c0c0';
         styleCss.color = 'black';
+        styleCss.width = '50%';
+        styleCss.marginRight = '20px';
+        styleCss.padding = '10px';
     });
 };
 
@@ -175,7 +173,7 @@ document.querySelector('.success').addEventListener('click', function () {
     }
     resultMessage(resultArray);
 
-    document.querySelector('.form-control').value = '';
+    document.querySelector('.input-field').value = '';
 });
 
 document.querySelector('.again').addEventListener('click', function () {
