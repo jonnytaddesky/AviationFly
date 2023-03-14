@@ -98,13 +98,13 @@ ul {
     .textarea-element {
         justify-content: center;
         width: 100%;
-        height: 400px;
+        height: auto;
     }
 
     .form-result {
         justify-content: center;
         width: 100%;
-        /* height: 200px; */
+        height: auto;
     }
 }
 .cnt {
