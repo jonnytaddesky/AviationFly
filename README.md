@@ -61,6 +61,10 @@ LO 281 C 25MAR 6 WAWLHR HK1          0735 0935   7M8 E 0 M
      SEE RTSVC
 ```
 
-## Скріншоти програми:
+## Скріншот головного вікна програми:
 
 ![](https://github.com/jonnytaddesky/AviationFly/blob/main/Screenshot/mainPage.png)
+
+## Скріншот виконання програми програми:
+
+![](https://github.com/jonnytaddesky/AviationFly/blob/main/Screenshot/workScript.png)
