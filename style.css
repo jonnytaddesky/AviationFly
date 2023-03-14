@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+body {
+    position: relative;
+}
+
 .header {
     background-color: #a9a9a9;
     margin-left: 20px;
