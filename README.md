@@ -68,3 +68,5 @@ LO 281 C 25MAR 6 WAWLHR HK1          0735 0935   7M8 E 0 M
 ## Скріншот виконання програми програми:
 
 ![](https://github.com/jonnytaddesky/AviationFly/blob/main/Screenshot/workScript.png)
+
+## Також даний додаток працює і на мобільних пристроях

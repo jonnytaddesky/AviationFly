@@ -15,11 +15,13 @@ const resultMessage = function (resultArray) {
         listItem.innerText = el;
         document.querySelector('.result').append(listItem);
 
-        styleCss.flex = '1 0 25%';
+        styleCss.flex = '1 0 50%';
         styleCss.border = '#fff solid 1px';
-        styleCss.borderRadius = '10px';
-        styleCss.padding = '15px';
         styleCss.marginLeft = '20px';
+        styleCss.marginRight = '20px';
+        styleCss.marginTop = '20px';
+        styleCss.padding = '10px';
+        styleCss.borderRadius = '10px';
         styleCss.backgroundColor = '#c0c0c0';
         styleCss.color = 'black';
     });

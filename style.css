@@ -56,23 +56,30 @@
 .name-site {
     color: white;
 }
-.form-group {
+.form-control {
     background-color: #fff;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* width: 100%; */
-}
-#usr {
-    width: 50%;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-right: 1000px;
 }
 ul {
     list-style-type: none;
     font-size: 17px;
-    /* padding-top: 10px; */
+}
+.form-control.form-result {
+    flex: 1 0 50%;
+}
+@media (max-width: 390px) {
+    .form-control,
+    .form-result {
+        flex: 1 0 100%;
+    }
+}
+.app {
+    display: flex;
+    flex-wrap: wrap;
 }
 .cnt {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -89,6 +96,7 @@ ul {
 }
 
 .button-app {
+    margin-top: 10px;
     display: flex;
     font-size: 15px;
 }
