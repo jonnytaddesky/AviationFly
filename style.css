@@ -57,12 +57,6 @@
     color: white;
 }
 
-@media (max-width: 390px) {
-    .input-field,
-    .form-result {
-        width: 100%;
-    }
-}
 .app {
     display: flex;
 }
@@ -280,4 +274,10 @@ ul {
 
 input {
     color: black;
+}
+@media (max-width: 390px) {
+    .input-field,
+    .form-result {
+        width: 100%;
+    }
 }
