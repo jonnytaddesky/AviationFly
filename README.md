@@ -10,21 +10,21 @@
 
 ### використовував наступні інструменти:
 
-> Visual Studio Code
-> Google Chrome
+-   Visual Studio Code
+-   Google Chrome
 
 ### Використовував мои програмування та розмітки сторінок:
 
-> JavaScript
-> HTML/CSS
-> Bootstrap
+-   JavaScript
+-   HTML/CSS
+-   Bootstrap
 
 ### Для доступу до бази IATCode:
 
-> jQuery
-> Json
+-   jQuery
+-   Json
 
 ### За допомогою
 
-> Microsoft PowerBI
-> Витягнув з сайту IATCode усіх аеропортів світу
+-   Microsoft PowerBI
+    Витягнув з сайту IATCode усіх аеропортів світу
