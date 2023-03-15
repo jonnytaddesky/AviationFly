@@ -46,9 +46,7 @@ BA 847 J 25MAR 6 WAWLHR HK1          1250 1440   319 E 0 M
 
 ### Результат виконання програми
 
-```
-25MAR.,12:50 - 14:40, Poland (Warsaw - Frédéric Chopin) - United Kingdom (London - Heathrow), BA 847
-```
+> 25MAR.,12:50 - 14:40, Poland (Warsaw - Frédéric Chopin) - United Kingdom (London - Heathrow), BA 847
 
 ### Приклади коду з системи Amadeus
 
@@ -60,9 +58,7 @@ LO 281 C 25MAR 6 WAWLHR HK1          0735 0935   7M8 E 0 M
 
 ### Результат виконання програми
 
-```
-25MAR.,07:35 - 09:35, Poland (Warsaw - Frédéric Chopin) - United Kingdom (London - Heathrow), LO 281
-```
+> 25MAR.,07:35 - 09:35, Poland (Warsaw - Frédéric Chopin) - United Kingdom (London - Heathrow), LO 281
 
 ### Приклади коду з системи Amadeus
 
@@ -76,11 +72,9 @@ BA 847 J 25MAR 6 WAWLHR HK1          1250 1440   319 E 0 M
 
 ### Результат виконання програми
 
-```
 > 25MAR.,12:50 - 14:40, Poland (Warsaw - Frédéric Chopin) - United Kingdom (London - Heathrow), BA 847
 > 25MAR.,15:45 - 20:05, United Kingdom (London - Heathrow) - USA (Los Angeles (CA) - International), BA 269
 > 30MAR.,22:05 - 18:40, USA (Los Angeles (CA) - International) - Poland (Warsaw - Frédéric Chopin), LO 024
-```
 
 ### Приклади коду з системи Amadeus
 
