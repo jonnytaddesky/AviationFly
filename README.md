@@ -1,5 +1,9 @@
 # AviationFly
 
+## Робоча версія проекту
+
+[Проект] (https://github.com/jonnytaddesky/AviationFly)
+
 ## Version 1.0
 
 Даний додаток створений для перетворення маршрутів перельоту з системи Amadeus в <br>
@@ -33,6 +37,8 @@
 
 ## Приклади коду з системи Amadeus, який зчитує дана програма:
 
+### Приклади коду з системи Amadeus
+
 ```
 BA 847 J 25MAR 6 WAWLHR HK1          1250 1440   319 E 0 M
      SEE RTSVC
@@ -43,6 +49,8 @@ BA 847 J 25MAR 6 WAWLHR HK1          1250 1440   319 E 0 M
 ```
 25MAR.,12:50 - 14:40, Poland (Warsaw - Frédéric Chopin) - United Kingdom (London - Heathrow), BA 847
 ```
+
+### Приклади коду з системи Amadeus
 
 ```
 LO 281 C 25MAR 6 WAWLHR HK1          0735 0935   7M8 E 0 M
@@ -55,6 +63,8 @@ LO 281 C 25MAR 6 WAWLHR HK1          0735 0935   7M8 E 0 M
 ```
 25MAR.,07:35 - 09:35, Poland (Warsaw - Frédéric Chopin) - United Kingdom (London - Heathrow), LO 281
 ```
+
+### Приклади коду з системи Amadeus
 
 ```
 BA 847 J 25MAR 6 WAWLHR HK1          1250 1440   319 E 0 M
@@ -72,6 +82,8 @@ BA 847 J 25MAR 6 WAWLHR HK1          1250 1440   319 E 0 M
 30MAR.,22:05 - 18:40, USA (Los Angeles (CA) - International) - Poland (Warsaw - Frédéric Chopin), LO 024
 ```
 
+### Приклади коду з системи Amadeus
+
 ```
 OS 625 J 25MAR 6 VIEWAW HK1  0745 3  0815 0930   E95 E 0 M
      PLS ADD PAX MOBILE CTC FOR IRREG COMMUNICATION
@@ -87,6 +99,8 @@ LO 281 C 25MAR 6 WAWLHR HK1          0735 0935   7M8 E 0 M
 25MAR.,08:15 - 09:30, Austria (Wien (Vienna) - Vienna International) - Poland (Warsaw - Frédéric Chopin), OS 625
 25MAR.,07:35 - 09:35, Poland (Warsaw - Frédéric Chopin) - United Kingdom (London - Heathrow), LO 281
 ```
+
+### Приклади коду з системи Amadeus
 
 ```
 BA 847 J 25MAR 6 WAWLHR HK1          1250 1440   319 E 0 M
@@ -121,3 +135,5 @@ LO 281 C 25MAR 6 WAWLHR HK1          0735 0935   7M8 E 0 M
 ![](https://github.com/jonnytaddesky/AviationFly/blob/main/Screenshot/workScript.png)
 
 ## Також даний додаток працює і на мобільних пристроях
+
+![](https://github.com/jonnytaddesky/AviationFly/blob/main/Screenshot/mobileApp.jpg)
