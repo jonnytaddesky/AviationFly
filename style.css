@@ -88,31 +88,11 @@ ul {
     display: flex;
     font-size: 15px;
 }
-/* @media (min-width: 391px) {
-    .app {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        align-items: flex-start;
-    }
 
-    .textarea-element {
-        justify-conte
-        nt: center;
-        width: 100%;
-        height: auto;
-    }
-
-    .form-result {
-        justify-content: center;
-        width: 100%;
-        height: auto;
-    }
-} */
 .cnt {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-bottom: 10px;
-    margin-top: 100px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 5px;
