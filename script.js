@@ -1,9 +1,6 @@
 'use strict';
 
-// let resultArray = [];
-// console.log(resultArray);
 let dataJson;
-// console.log(resultArray);
 const pnrText = function () {
     return document.querySelector('.input-field').value;
 };
